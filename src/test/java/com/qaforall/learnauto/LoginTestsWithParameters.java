@@ -20,6 +20,10 @@ public class LoginTestsWithParameters {
 		driver.get(url);
 		Thread.sleep(2000);
 		
+		System.out.println("*********");
+		System.out.println("loginTest is running with username " + username + " and password " + password);
+		System.out.println("*********");
+		
 		//all web elements
 		WebElement usernameTextBox = driver.findElement(By.id("username")); 
 		WebElement passwordTextBox = driver.findElement(By.id("password"));
